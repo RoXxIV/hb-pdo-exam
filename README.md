@@ -56,9 +56,9 @@ Liste des exercices 0. Importer la base de données
 ## 4. Exécution d'une requête préparée (INSERT) (3 points)
 
 - Dans le fichier `4-insert-prepare.php`
-  - [ ] Utiliser la connexion créée dans le fichier `includes/connect.php` pour insérer les données du tableau `$data` dans la table `category` à l'aide d'une requête préparée
-  - [ ] En cas d'erreur de l'insertion, afficher un message d'erreur `Erreur lors de l'insertion de la donnée : ` et afficher l'index `name` du tableau (afin de retrouver la ligne provoquant l'erreur).
-- [ ] Faire un commit
+  - [x] Utiliser la connexion créée dans le fichier `includes/connect.php` pour insérer les données du tableau `$data` dans la table `category` à l'aide d'une requête préparée
+  - [x] En cas d'erreur de l'insertion, afficher un message d'erreur `Erreur lors de l'insertion de la donnée : ` et afficher l'index `name` du tableau (afin de retrouver la ligne provoquant l'erreur).
+- [x] Faire un commit
 
 ## 5. Exécution d'une requête préparée (SELECT) (4 points)
 
