@@ -48,10 +48,10 @@ Liste des exercices 0. Importer la base de données
 ## 3. Exécution d'une requête directe (SELECT) (2 points)
 
 - Dans le fichier `3-select-direct.php`
-  - [ ] Utiliser la connexion créée dans le fichier `includes/connect.php` pour récupérer les données contenues dans la table `product` et les mettre dans le tableau `$data` à l'aide d'une requête directe (méthode `query`)
-    - [ ] Les données doivent être dans un tableau associatif ou un objet (voir les constantes de PDO `PDO::FETCH_`, il n'y a pas besoin de créer des classes ici)
-  - [ ] Compléter l'affichage HTML déjà présent dans le fichier (les données doivent s'afficher)
-- [ ] Faire un commit
+  - [x] Utiliser la connexion créée dans le fichier `includes/connect.php` pour récupérer les données contenues dans la table `product` et les mettre dans le tableau `$data` à l'aide d'une requête directe (méthode `query`)
+    - [x] Les données doivent être dans un tableau associatif ou un objet (voir les constantes de PDO `PDO::FETCH_`, il n'y a pas besoin de créer des classes ici)
+  - [x] Compléter l'affichage HTML déjà présent dans le fichier (les données doivent s'afficher)
+- [x] Faire un commit
 
 ## 4. Exécution d'une requête préparée (INSERT) (3 points)
 

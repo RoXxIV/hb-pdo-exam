@@ -1,8 +1,14 @@
 <?php
 
 include 'includes/connect.php';
+$sql = "SELECT name,description,price,stock
+FROM product";
 
-$data = [];
+
+$results = $connection->query($sql);
+$data = $results->fetchAll(PDO::FETCH_ASSOC);
+
+
 ?>
 
 <table>
@@ -12,12 +18,12 @@ $data = [];
         <th>Prix</th>
         <th>En stock</th>
     </tr>
-    <?php foreach ($data as $beanie) { ?>
-        <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-    <?php } ?>
+    <?php foreach ($data as $beanie) {
+    echo'<tr>
+            <td>'.$beanie['name'].'</td>
+            <td>'.$beanie['description'].'</td>
+            <td>'.$beanie['price'].'</td>
+            <td>'.$beanie['stock'].'</td>
+        </tr>';
+} ?>
 </table>
