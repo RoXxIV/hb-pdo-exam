@@ -31,19 +31,19 @@ Liste des exercices 0. Importer la base de données
 
 ## 1. Se connecter et utiliser la base de données (2 points)
 
-- [ ] Mettre à jour le fichier `includes/db.inc.php` si nécessaire (si vous utilisez un Mac, par exemple)
+- [x] Mettre à jour le fichier `includes/db.inc.php` si nécessaire (si vous utilisez un Mac, par exemple)
 - Dans le fichier `includes/connect.php`
-  - [ ] Créer une connexion à la base de données, qui sera utilisée dans tous les autres fichiers
-  - [ ] En cas d'erreur de la connexion, arrêter le script et affiche un message `Connexion échouée : ` suivi du message d'erreur de l'exception PDO
-- [ ] Faire un commit
+  - [x] Créer une connexion à la base de données, qui sera utilisée dans tous les autres fichiers
+  - [x] En cas d'erreur de la connexion, arrêter le script et affiche un message `Connexion échouée : ` suivi du message d'erreur de l'exception PDO
+- [x] Faire un commit
 
 ## 2. Exécution d'une requête directe (INSERT) (2 points)
 
 - Dans le fichier `2-insert-direct.php`
-  - [ ] Utiliser la connexion créée dans le fichier `includes/connect.php` pour insérer les données du tableau `$data` dans la table `product` à l'aide d'une requête directe de PDO (méthode `exec`)
-    - [ ] /!\ Attention, pour le champ `updated_at`, toujours utiliser la valeur `NOW()` lors de l'insertion
-  - [ ] En cas d'erreur de l'insertion, afficher un message d'erreur `Erreur lors de l'insertion de la donnée : ` et afficher l'index `name` du tableau (afin de retrouver la ligne provoquant l'erreur).
-- [ ] Faire un commit
+  - [x] Utiliser la connexion créée dans le fichier `includes/connect.php` pour insérer les données du tableau `$data` dans la table `product` à l'aide d'une requête directe de PDO (méthode `exec`)
+    - [x] /!\ Attention, pour le champ `updated_at`, toujours utiliser la valeur `NOW()` lors de l'insertion
+  - [x] En cas d'erreur de l'insertion, afficher un message d'erreur `Erreur lors de l'insertion de la donnée : ` et afficher l'index `name` du tableau (afin de retrouver la ligne provoquant l'erreur).
+- [x] Faire un commit
 
 ## 3. Exécution d'une requête directe (SELECT) (2 points)
 
