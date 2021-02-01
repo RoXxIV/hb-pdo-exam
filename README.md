@@ -1,17 +1,19 @@
 # PHP Data Object (PDO) - Exam
 
-Pour travailler sur ce projet : 
+Pour travailler sur ce projet :
+
 - **créer un fork** du projet (sur la page [https://github.com/Dreeckan/hb-pdo-exam](https://github.com/Dreeckan/hb-pdo-exam), cliquer sur le bouton `fork`, en haut à droite de la page)
 - Cloner **votre** projet (commande `git clone` par exemple)
 - Créer une branche pour faire tout l'exam
 - À la fin de l'examen, vous **devez** envoyer un zip de votre code sur Moodle et vous **pouvez** faire une PR à destination du projet d'origine (afin de faciliter mes retours pour la correction)
 
 La durée prévue est d'environ 3h. Des points peuvent être perdus pour le retard du rendu :
+
 - 1 point si le rendu est fait après 18h
 - 2 point si le rendu est fait après 20h
 
-Liste des exercices
-0. Importer la base de données
+Liste des exercices 0. Importer la base de données
+
 1. Se connecter et utiliser la base de données (2 points)
 2. Exécution d'une requête directe (INSERT) (2 points)
 3. Exécution d'une requête directe (SELECT) (2 points)
@@ -23,9 +25,9 @@ Liste des exercices
 ## 0. Importer la base de données
 
 - À la racine de ce projet, vous trouverez un fichier `beanies_exam.sql`. Il vous faudra :
-  - [ ] Importer la base de données `beanies` dans PhpMyAdmin (la base de données est créée automatiquement)
-  - [ ] Parcourez-la pour en comprendre le fonctionnement (elle contient 3 tables)
-- [ ] Faire un commit
+  - [x] Importer la base de données `beanies` dans PhpMyAdmin (la base de données est créée automatiquement)
+  - [x] Parcourez-la pour en comprendre le fonctionnement (elle contient 3 tables)
+- [x] Faire un commit
 
 ## 1. Se connecter et utiliser la base de données (2 points)
 
@@ -34,7 +36,7 @@ Liste des exercices
   - [ ] Créer une connexion à la base de données, qui sera utilisée dans tous les autres fichiers
   - [ ] En cas d'erreur de la connexion, arrêter le script et affiche un message `Connexion échouée : ` suivi du message d'erreur de l'exception PDO
 - [ ] Faire un commit
-  
+
 ## 2. Exécution d'une requête directe (INSERT) (2 points)
 
 - Dans le fichier `2-insert-direct.php`
@@ -50,7 +52,7 @@ Liste des exercices
     - [ ] Les données doivent être dans un tableau associatif ou un objet (voir les constantes de PDO `PDO::FETCH_`, il n'y a pas besoin de créer des classes ici)
   - [ ] Compléter l'affichage HTML déjà présent dans le fichier (les données doivent s'afficher)
 - [ ] Faire un commit
-  
+
 ## 4. Exécution d'une requête préparée (INSERT) (3 points)
 
 - Dans le fichier `4-insert-prepare.php`
@@ -85,7 +87,7 @@ Nous allons maintenant ajouter des bonnets supplémentaires **et** les lier à d
   - [ ] En cas d'erreur de l'insertion, afficher un message d'erreur `Erreur lors de l'insertion de la donnée : ` et afficher l'index `name` du tableau (afin de retrouver la ligne provoquant l'erreur).
   - [ ] Ajouter chacun des bonnets et le lien entre bonnets et catégories :
     - [ ] Pour chaque bonnet, faire une première requête d'insertion, puis récupérer l'identifiant grâce à la méthode `lastInsertId`
-    - [ ] Pour chaque catégorie liée au bonnet, 
+    - [ ] Pour chaque catégorie liée au bonnet,
       - [ ] Faire une requête pour récupérer l'identifiant de la catégorie
       - [ ] Faire une requête pour insérer la liaison entre le bonnet la catégorie
   - [ ] Vérifier que les entrées existent bien et sont correctes dans PhpMyAdmin
