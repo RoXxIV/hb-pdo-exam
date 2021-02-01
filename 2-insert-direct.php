@@ -78,9 +78,26 @@ Matière: 32 % Laine, 32 % Polyamide, 30 % Viscose, 3 % Cashmere 3 % Autres fibr
         1,
         NOW())";
     $count = $connection->exec($sql);
-*/
-$isDone = $count->execute();
-        
+
+    $isDone = $count->execute();
+
     if (!$isDone) {
         throw new Exception('Erreur');
     }
+
+
+    ou
+
+foreach ($data as $beanie){
+    $sql = "INSERT INTO product (name,description,price,stock,updated_at)
+    VALUES ('$beanie[name]', '$beanie[description]','$beanie[price]','$beanie[stock]', 'NOW()')";
+    $count = $connection->exec($sql);
+$isDone = $count->execute();
+
+    if (!$isDone) {
+        throw new Exception('Erreur');
+    }
+
+}
+
+*/
