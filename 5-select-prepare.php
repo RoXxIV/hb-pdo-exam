@@ -3,8 +3,7 @@
 include 'includes/connect.php';
 $sql = "SELECT product.name,description,price,category.name AS category,stock
 FROM `product`
-JOIN product_has_category on product_has_category.id_product = product.id
-JOIN category on category.id = product_has_category.id_category";
+LEFT JOIN category on product.id = category.id";
 
 
 $results = $connection->query($sql);
