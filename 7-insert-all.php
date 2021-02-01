@@ -39,3 +39,27 @@ Matière:
         ],
     ],
 ];
+
+
+
+
+    foreach ($data as $cap) {
+        $sql = "INSERT INTO product (name,description,price,stock,updated_at)
+    VALUES (:name, :description,:price,:stock, 'NOW()')";
+        $stmt = $connection->prepare($sql);
+
+        $stmt->bindParam(':name', $cap['name'], PDO::PARAM_STR);
+        $stmt->bindParam(':description', $cap['description'], PDO::PARAM_STR);
+        $stmt->bindParam(':price', $cap['price'], PDO::PARAM_STR);
+        $stmt->bindParam(':stock', $cap['stock'], PDO::PARAM_STR);
+
+        $ret = $stmt->execute();
+
+        if (!$ret) {
+            throw new Exception('Erreur lors de l\'insertion de '.$cap['name']);
+        }
+
+        /*
+            $id = $connection->lastInsertId();
+        */
+    }
