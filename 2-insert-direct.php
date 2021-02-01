@@ -79,3 +79,8 @@ Matière: 32 % Laine, 32 % Polyamide, 30 % Viscose, 3 % Cashmere 3 % Autres fibr
         NOW())";
     $count = $connection->exec($sql);
 */
+$isDone = $count->execute();
+        
+    if (!$isDone) {
+        throw new Exception('Erreur');
+    }
